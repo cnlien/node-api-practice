@@ -18,12 +18,14 @@ Follow these steps to set up and work on your project:
 
 ## Minimum Viable Product
 
-- [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
-- [ ] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
+- [x] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
+- [x] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
 
 Design and build the necessary endpoints to:
 
-- [ ] Perform CRUD operations on _shows_ and _characters_. When adding a character, make sure the `show_id` provided belongs to an existing `show`. If you try to add a character with a `show_id` of 3 and there is no show with that `id` the database will return an error.
+- [x] Perform CRUD operations on _shows_ 
+- [x] Perform CRUD operation on _characters_.
+- [x] When adding a character, make sure the `show_id` provided belongs to an existing `show`. If you try to add a character with a `show_id` of 3 and there is no show with that `id` the database will return an error.
 - [ ] Retrieve the list of characters for a show.
 
 Please read the following sections before implementing the Minimum Viable Product, they describe how the database is structured and the files and methods available for interacting with the data.
@@ -67,7 +69,7 @@ The `showsModel.js` helper includes an extra method called `getShowsCharacters()
 We have provided test data for all the resources.
 
 ## Stretch Goal
-- Add a custom middleware function that logs information about every request that comes into your server e.g. provides information about the request method or request url.
+- [x] Add a custom middleware function that logs information about every request that comes into your server e.g. provides information about the request method or request url.
 - Use `create-react-app` to create an application in a separate folder (outside the API shows/data folder). Name it anything you want.
 - From the React application show a list of all _shows_ using the API you built.
 - Add functionality to show the details of a show, including its characters, when clicking a show's name in the list. Use React Router to navigate to a separate route to show the show's details.
